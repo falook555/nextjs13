@@ -6,22 +6,22 @@ const api = config.api
 
 const Index = () => {
 
-    const [dataARR, getDataARR] = useState([])
+    // const [dataARR, getDataARR] = useState([])
 
     useEffect(() => {
-        getAllApp()
+        //getAllApp()
     }, [])
 
-    const getAllApp = async () => {
-        try {
-            const res = await axios.get(`${api}/get-data-eiei`)
-            // console.log(res.data)
-            getDataARR(res.data)
-        } catch (error) {
-            console.log(error)
-            // toast.error('เกิดข้อผิดพลาด')
-        }
-    }
+    // const getAllApp = async () => {
+    //     try {
+    //         const res = await axios.get(`${api}/get-data-eiei`)
+    //         // console.log(res.data)
+    //         getDataARR(res.data)
+    //     } catch (error) {
+    //         console.log(error)
+    //         // toast.error('เกิดข้อผิดพลาด')
+    //     }
+    // }
 
     return (
         <div>
